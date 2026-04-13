@@ -111,3 +111,7 @@ async def chat(req: ChatRequest):
         "answer": answer,
         "sources": list({doc.metadata.get("source", "") for doc in docs})
     }
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8080))
+    uvicorn.run("app:app", host="0.0.0.0", port=port)
