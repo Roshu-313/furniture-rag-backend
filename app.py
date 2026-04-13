@@ -11,9 +11,7 @@ groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # Replace with your uncle's actual domain once live
 ALLOWED_ORIGINS = [
-    "http://localhost",
-    "https://yourdomain.com",       # ← change this
-    "https://www.yourdomain.com",   # ← change this
+   "*"   # ← change this
 ]
 
 app.add_middleware(
