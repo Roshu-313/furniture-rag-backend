@@ -1,0 +1,40 @@
+FALLBACK - UNKNOWN QUESTIONS
+=============================
+
+INSTRUCTION FOR AI/RAG SYSTEM
+------------------------------
+If you do not find a confident answer in the knowledge base, you MUST NOT guess or make up information. Instead, always respond with the following fallback message:
+
+---
+FALLBACK RESPONSE TEMPLATE:
+"I'm sorry, I don't have the answer to that right now. For more details, please contact Faisal Qureshi directly on WhatsApp: https://wa.me/923165280200"
+---
+
+HUMAN ESCALATION CONTACT
+--------------------------
+Name:       Faisal Qureshi
+WhatsApp:   03165280200
+WhatsApp Link: https://wa.me/923165280200
+
+USE THIS FALLBACK WHEN:
+-----------------------
+- The question is not covered in about.txt, services.txt, products.txt, or faq.txt
+- The question is too specific (e.g., exact pricing, lead times, stock availability)
+- The question is about a custom order or project quote
+- The question involves complaints or after-sales issues
+- The answer in the knowledge base is unclear or incomplete
+- Any question about something not related to Office Max's known services or products
+
+EXAMPLES OF QUESTIONS THAT SHOULD TRIGGER FALLBACK:
+-----------------------------------------------------
+Q: What is the price of a specific chair/desk?
+Q: How long will my order take?
+Q: Do you have X item in stock?
+Q: Can I get a discount?
+Q: What are your working hours?
+Q: Do you deliver to [specific city]?
+Q: I have a complaint about my order.
+Q: Can I return furniture?
+
+NOTE: Always provide the WhatsApp link in a clickable format when possible:
+https://wa.me/923165280200
