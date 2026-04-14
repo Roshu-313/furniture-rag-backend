@@ -9,7 +9,7 @@ from langchain.embeddings.base import Embeddings
 from rank_bm25 import BM25Okapi
 
 # ── FIXED PATHS (IMPORTANT) ─────────────────────────────────────────
-BASE_DIR = Path(__file__).resolve().parent.parent  # project root
+BASE_DIR = Path(__file__).resolve().parent  # project root
 
 KNOWLEDGE_DIR = BASE_DIR / "knowledge_base"
 FAISS_PATH = BASE_DIR / "faiss_index"
