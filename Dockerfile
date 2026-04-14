@@ -9,6 +9,7 @@ RUN python -c "from sentence_transformers import SentenceTransformer, CrossEncod
     SentenceTransformer('BAAI/bge-small-en-v1.5'); \
     CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')"
 
+COPY knowledge_base/ ./knowledge_base/
 COPY . .
 
 CMD uvicorn app:app --host 0.0.0.0 --port $PORT
